@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a506732c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredericka+the+Great"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Galada&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>School Website!</title>
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      .img-hover {
+        transition: 0.2s ease-in;
+      }
+      .img-hover:hover {
+        transform: scale(1.1);
+      }
+
+      .floating-bg {
+        font-size: 4rem;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+        background-image: url("https://images.unsplash.com/photo-1580390782696-ab2ffb0d0291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80");
+        color: rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: text;
+        background-repeat: repeat-x;
+        animation: text 15s linear infinite;
+      }
+      @keyframes text {
+        0% {
+          background-position: left 0 top 0px;
+        }
+
+        40% {
+          background-position: left -800px top 0px;
+        }
+      }
+    </style>
+  </head>
+  <!-- #1eaaf1  -->
+  <body style="font-family: 'Montserrat', sans-serif;">
+    <div
+      id="slider"
+      class="py-2"
+      style="background:rgba(0,0,0,.9);font-family: 'Montserrat', sans-serif;"
+    >
+      <div class="container-fluid">
+        <div
+          class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0"
+        >
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+              <div class="col-md-5 pr-4 d-flex topper align-items-center">
+                <div
+                  class="icon bg-fifth mr-2 d-flex justify-content-center align-items-center"
+                >
+                  <span
+                    class="icon-map  fas fa-map-marker-alt text-light "
+                  ></span>
+                </div>
+                <span class="text-light"
+                  ><small>Oil Meel,Deeken,Neemuch(MP)</small>
+                </span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div
+                  class="icon mr-2 d-flex justify-content-center align-items-center"
+                >
+                  <!-- fas fa-envelope -->
+                  <span class="text-light fas fa-paper-plane "></span>
+                </div>
+                <span class="text-light">svns@gmail.com</span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div
+                  class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"
+                >
+                  <span
+                    class="icon-phone2 fas fa-phone-volume text-light"
+                  ></span>
+                </div>
+                <span class="text-light">+ 1235 2355 98</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---
+      <div
+        class="bg-light col-lg-12 m-0  row py-2 text-dark"
+        style="top:0;position:fixed;min-height:50px;box-shadow:0 -1px 8px #131212;z-index: 2000"
+      >
+        <a
+          class="col py-2  text-dark  text-center border-righ padding-0 "
+          style="font-family: 'Galada', cursive;font-size: 1.7rem;"
+          href="/"
+          title="khetiwadi"
+          >Khetiwadi</a
+        >
+        <a
+          class="col border-righ text-center  f_size padding-0"
+          href="/"
+          title="home"
+          ><i class="fas fa-home"></i><br /><span>Home</span>
+        </a>
+        <a
+          class="col text-dark text-center border-righ f_size padding-0 "
+          href="/portal"
+          title="portal"
+          ><i class="fas fa-bell"></i><br /><span>पोर्टल</span>
+        </a>
+
+        <a
+          class="col text-dark  text-center f_size  padding-0"
+          href="/gedgets"
+          title="gadgets"
+          ><i class="fas fa-mobile-alt"></i><br /><span>Gadgets</span>
+        </a>
+
+        <a
+          class="col border-righ text-center f_size padding-0"
+          href="/blog"
+          title="blog"
+          ><i class="fas fa-blog"></i><br /><span>ब्लॉग</span>
+        </a>
+        <a
+          class="col border-righ text-center f_size padding-0"
+          href="/news"
+          title="news"
+          ><i class="fas fa-newspaper"></i><br /><span>समाचार</span>
+        </a>
+        <a
+          class="col border-righ text-center f_size padding-0"
+          href="/technology"
+          title="technology"
+          ><i class="fas fa-tools"></i><br /><span>कृषि यंत्र</span>
+        </a>
+        <a
+          class="col  text-center f_size padding-0"
+          href="/mandi"
+          title="mandi bhav"
+          ><i class="fas fa-carrot"></i><br /><span>मंडी भाव </span>
+        </a>
+      </div>
+      --->
+      <!-- nav -->
+    </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide "
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="svns-director.jpg"
+            alt="..."
+            style="width: 100%;height: 400px;filter: brightness(0.5)"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum....</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="svns-holi.jpg"
+            alt="..."
+            style="width: 100%;height: 400px;filter: brightness(0.5)"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum....</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="svns-photo.jpg"
+            alt="..."
+            style="width: 100%;height: 400px;filter: brightness(0.5)"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum....</p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- end slider -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dar ftco_navbar ftco-navbar-light "
+      id="ftco-navbar"
+      style="background: #ff6100;font-family: 'Montserrat', sans-serif;
+      position: sticky;
+      top: 0;
+      z-index: 1000;"
+    >
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-graduation-cap mr-1"></i>SVN School</a
+        >
+        <button
+          class="navbar-toggler text-light border"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link pl-0"
+                ><i class="fas fa-home mr-1"></i>Home</a
+              >
+            </li>
+            <li class="nav-item ">
+              <a href="about.html" class="nav-link text-light">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="teacher.html" class="nav-link text-light">Teacher</a>
+            </li>
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link text-light">Courses</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="pricing.html" class="nav-link text-light">Pricing</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link text-light">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-light">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    <div class="container py-3 text-center sch-name" style="background:;">
+      <h1 class=" floating-bg" style="">
+        <i class="floating-bg fas fa-graduation-cap mr-1"></i>
+        Sharda Vidhya Niketan School <br />
+        <small style="font-size:2.5rem;">Jarda, Neemuch(MP)</small>
+      </h1>
+    </div>
+    <!-- Header -->
+    <div class="container mt-5 mb-4">
+      <div class="row mb-5">
+        <div class="col-lg-3" style="padding-right:0;">
+          <img src="Goddes-Saraswat.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div
+          class="col-lg-9  text-center py-5 mb-4 mt-3"
+          style="background: #ff6100;"
+        >
+          <h1 class="font-weight-light text-white">WELCOME TO OUR SCHOOL</h1>
+          <small class="text-light"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore. It is dedicated to the service of fostering intellectual and
+            personal development among the young learners and grooming them to
+            be committed and competent individuals. This catholic Institution is
+            administered by the Sisters of the Holy spirit (SSpS). This catholic
+            Institution is administered by the Sisters of the Holy spirit
+            (SSpS).
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-xl-3 col-md-6 mb-4 img-hover">
+          <div class="card border-0 shadow">
+            <img src="admission-details.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Infrasturcture</h5>
+              <div class="card-text text-black-50">library</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-xl-3 col-md-6 mb-4 img-hover">
+          <div class="card border-0 shadow">
+            <img src="school-topper.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Infrasturcture</h5>
+              <div class="card-text text-black-50">Computer</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-xl-3 col-md-6 mb-4 img-hover">
+          <div class="card border-0 shadow">
+            <img src="admission-details.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Infrasturcture</h5>
+              <div class="card-text text-black-50">play school</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="col-xl-3 col-md-6 mb-4 img-hover">
+          <div class="card border-0 shadow">
+            <img src="school-topper.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Infrasturcture</h5>
+              <div class="card-text text-black-50">art craft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- notice board and event -->
+
+    <div
+      class="row py-2 mt-4 mb-3 scroll "
+      style="background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,0.7)),url('svns-holi.jpg');background-position: center;background-size: cover;background-attachment: fixed;"
+    >
+      <div
+        class="col-lg-5 mt-2 mb-2 container notice-board"
+        style="min-height: 400px;background: #f7f7f7ed;"
+      >
+        <div
+          class="container text-center text-light"
+          style="background: #ff6100;"
+        >
+          <h1>Notice Board</h1>
+        </div>
+        <div
+          class="container border mt-3"
+          style="min-height: 300px;max-height: 300px; overflow-y: scroll;overflow-x: hidden;"
+        >
+          <h1 class="font-weight-light text-dark">REPUBLIC DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 26 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">PONGAL</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">ARMY DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">MAKAR SANKRANTI</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">lOHRI DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 13 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">LETTER FROM C.B.S.E.</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 04 Feb 2019
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+          <h1 class="font-weight-light text-dark">
+            Online Registration Admission Guidlines 2020 -21
+          </h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 02 Dec 2019
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <hr />
+        </div>
+      </div>
+      <div
+        class="col-lg-5 mt-2 mb-2 container"
+        style="min-height: 400px;background: #f7f7f7ed;"
+      >
+        <div
+          class="container text-center text-light"
+          style="background: #ff6100;"
+        >
+          <h1>School Event's</h1>
+        </div>
+        <div
+          class="container border mt-3"
+          style="min-height: 300px;max-height: 300px; overflow-y: scroll;overflow-x: hidden;"
+        >
+          <h1 class="font-weight-light text-dark">REPUBLIC DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 26 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+
+          <hr />
+          <h1 class="font-weight-light text-dark">PONGAL</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+          <h1 class="font-weight-light text-dark">ARMY DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+          <h1 class="font-weight-light text-dark">MAKAR SANKRANTI</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 15 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+          <h1 class="font-weight-light text-dark">lOHRI DAY</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 13 Jan 2020
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+          <h1 class="font-weight-light text-dark">LETTER FROM C.B.S.E.</h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 04 Feb 2019
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+          <h1 class="font-weight-light text-dark">
+            Online Registration Admission Guidlines 2020 -21
+          </h1>
+          <p class="font-weight-light text-danger">
+            <i class="fas fa-calendar-alt"></i> 02 Dec 2019
+          </p>
+          <small class="text-dark"
+            >Established in 1928, St. Raphael's Higher Secondary School is one
+            of the oldest, private unaided minority educational institution in
+            Indore.</small
+          >
+          <br />
+          <span class="icon-map  fas fa-map-marker-alt text-success "></span>
+          <span class="text-primary"
+            ><small> Sharda Vidhya Niketan School,Jarda, Neemuch(MP)</small>
+          </span>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container py-3">
+      <!-- Header -->
+      <header class=" text-center py-3 mb-2" style="background: #ff6100;">
+        <div class="container">
+          <h1 class="font-weight-light text-white">A Few Moments</h1>
+        </div>
+      </header>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-1.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-2.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-3.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-4.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-5.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-xl-4 col-md-6 mt-5 mb-6 img-hover">
+          <div class="card border-0 shadow">
+            <img src="svns-resize-6.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="container text-center mt-3 mb-3 img-hover">
+        <a href="#slider" class="btn text-light" style="background: #ff6100;"
+          >View All</a
+        >
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <hr />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58104.093751001295!2d74.83710707202351!3d24.46792368933206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39667381d35aea05%3A0x42c8caa932bb6fa1!2sNeemuch%2C%20Madhya%20Pradesh%20458441!5e0!3m2!1sen!2sin!4v1584561818435!5m2!1sen!2sin"
+      height="450"
+      frameborder="0"
+      style="border:0;width: 100%;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+    <hr />
+    <div
+      id="contact"
+      class="container bg-dar text-light py-3 mb-5 mt-5 "
+      style="background: rgba(0,0,0,.9);"
+    >
+      <div class="row ">
+        <div class="col ">
+          <p class="text-center ">
+            <a href="/privacy" class="text-light" title="Privacy Policy"
+              >Privacy Policy
+            </a>
+          </p>
+          <p class="text-center ">
+            <a href="/terms" class="text-light" title="Terms & conditions"
+              >Terms &amp; Conditions</a
+            >
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center ">
+            <a href="/contact" class=" text-light" title="contect us"
+              >Contact Us
+            </a>
+          </p>
+          <p class="text-center ">
+            <a href="/about" class=" text-light" title="About us"
+              >About School</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container  text-center text-secondary py-3 mb-5 ">
+      <small class="text-center text-secondary">
+        <!-- This website belongs to farming and farming machinary. Created and
+        Managed by khetiwadi development team. Content owned and updated by
+        khetiwadi. <br /> -->
+        <span class="text-primary"
+          >Copyright &copy; 2020 . All Rights Reserved.<i
+            class="text-secondary"
+          >
+            Designed By Shailendra Patidar</i
+          ></span
+        ></small
+      >
+      <hr />
+    </div>
+
+    <script>
+      // const element = document.querySelector(".notice-board");
+      // element.classList.add("animated", "fadeInLeft");
+
+      const lement = document.querySelector(".sch-name");
+      lement.classList.add("animated", "bounceInUp");
+
+      // $(document).ready(function() {
+      //   // Check if element is scrolled into view
+      //   function isScrolledIntoView(elem) {
+      //     var docViewTop = $(window).scrollTop();
+      //     var docViewBottom = docViewTop + $(window).height();
+
+      //     var elemTop = $(elem).offset().top;
+      //     var elemBottom = elemTop + $(elem).height();
+
+      //     return elemBottom <= docViewBottom && elemTop >= docViewTop;
+      //   }
+      //   // If element is scrolled into view, fade it in
+      //   $(window).scroll(function() {
+      //     $(".scroll .notice-board").each(function() {
+      //       if (isScrolledIntoView(this) === true) {
+      //         $(this).addClass("fadeInLeft");
+      //       }
+      //     });
+      //   });
+      // });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
